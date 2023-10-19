@@ -1,3 +1,201 @@
 body {
     margin: 0;
+    font-family: 'Smythe', cursive;
+    background-color: #F5F5F5;
 } 
+
+header, main {
+    width: 600px;
+    margin: 0 auto;
+}
+
+h1, h2, p {
+    font-weight: 400;
+    margin: 0;
+}
+
+.header-div {
+    width: 100%;
+    height: 167px;
+    margin-bottom: 16px;
+    background-image: url("images/burger.png");
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke;
+}
+
+.header-div h1 {
+    margin: 0;
+    padding: 46px 0 5px 46px;
+}
+
+.header-div p {
+    margin-top: 0;
+    padding-left: 46px;
+}
+
+.menu-item {
+    width: 90%;
+    margin: auto;
+}
+
+.menu-item-container {
+    padding: 51px 0px;
+    border-bottom: 1px solid #DEDEDE;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-sub-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.emoji-container {
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-emoji {
+    margin: 0;
+    font-size: 50px;
+}
+
+.item-description {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 8px;
+}
+
+.item-description p {
+    color: #8B8B8B;
+    margin-bottom: 5px;
+}
+
+.item-add-btn {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    border: 1px solid #DEDEDE;
+    border-radius: 50%;
+    background-color: #F5F5F5;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.order-title {
+    width: max-content;
+    margin: 45px auto;
+}
+
+.order-container, .total-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+    border-bottom: 2px solid black;
+    gap: 10px;
+}
+
+.total-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: none;
+}
+
+.order-sub-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-details, .total-details {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.remove-btn {
+    margin-top: 8px;
+    border: none;
+    color: #8B8B8B;
+    background-color: inherit;
+    cursor: pointer;
+}
+.order-btn {
+    display: block;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px 0;
+    border: none;
+    border-radius: 3px;
+    background-color: #16DB99;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+.payment-modal {
+    position: fixed;
+    width: 524px;
+    height: 524px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: #FFFFFF;
+    box-shadow: 0 0 50px #8B8B8B;
+}
+
+.payment-modal h1 {
+    width: max-content;
+    margin: 47px auto;
+}
+
+.payment-modal input[type="text"] {
+    box-sizing: border-box;
+    display: block;
+    width: 90%;
+    height: 71px;
+    margin: 0 auto 20px auto;
+    font-size: xx-large;
+    padding-left: 20px;
+}
+
+.payment-modal button {
+    box-sizing: border-box;
+    display: block;
+    width: 90%;
+    margin: 40px auto;
+    padding: 20px 0;
+    border: none;
+    border-radius: 3px;
+    background-color: #16DB99;
+    font-size: xx-large;
+    cursor: pointer;
+}
+
+.confirm-order {
+    width: max-content;
+    margin: 45px auto;
+    padding: 50px 60px;
+    border-radius: 3px;
+    background-color: #ECFDF5;
+    color: #065F46;
+}
+
+.hidden {
+    display: none;
+}
